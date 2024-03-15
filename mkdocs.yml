@@ -1,1 +1,72 @@
-site_name: My Docs
+site_name: andre O protasio
+site_url: http://andreoprotasio.github.io
+site_author: André Protasio
+repo_url: https://github.com/andreOprotasio/andreOprotasio.github.io
+repo_name: Repositorio desse site
+nav:
+  - Inicio: index.md
+  - Blog:
+    - blog/index.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: pt-BR
+  icon:
+    repo: fontawesome/brands/git
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Mudar pra modo escuro
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Mudar para modo claro
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.prune
+    - toc.follow
+
+plugins:
+  - offline
+  - search:
+  - social:
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: medium
+      post_url_date_format: yyyy/MM
+      authors: true
+      authors_profiles: true
+      authors_profiles_name: Authors
+      authors_profiles_url_format: "{slug}"
+      draft_if_future_date: true
+      archive: false
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
+extra:
+  social:
+    - icon: fontawesome/solid/envelope-circle-check
+      link: mailto:<andreprotasio@outlook.com>
+
+    - icon: fontawesome/brands/github
+      link: https://github.com/andreOprotasio
+      name: Meu Perfil do Github
+  consent:
+    title: Politica Cookie
+    description: >- 
+      Utilizamos cookies para reconhecer suas repetidas visitas e preferências, bem como para medir a eficácia de nossa documentação e se os usuários encontram o que procuram. Com o seu consentimento, você está nos ajudando a melhorar nossa documentação.
+
+copyright: Copyright &copy; 2024 André F. S. Protasio
