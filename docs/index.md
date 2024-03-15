@@ -2,6 +2,8 @@
 hide:
   - navigation
   - toc
+authors:
+  - Andre
 ---
 
 # Olá visitante
@@ -12,4 +14,4 @@ hide:
 
 
                             Divirta-se
-
+<!-- <p> Teste de <b>HTML</b> direto </p> -->

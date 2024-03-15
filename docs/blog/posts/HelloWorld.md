@@ -1,7 +1,8 @@
 ---
 Title: Olá Mundo
 Description: Primeira pagina do blog
-author: Andre
+authors:
+  - Andre
 date: 
     created: 2024-03-14
     updated: 2024-03-15

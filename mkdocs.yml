@@ -33,6 +33,8 @@ theme:
     - navigation.tracking
     - navigation.prune
     - toc.follow
+    - content.code.copy
+    - content.code.annotate
 
 plugins:
   - offline
@@ -45,12 +47,10 @@ plugins:
       post_url_date_format: yyyy/MM
       authors: true
       authors_profiles: true
-      authors_profiles_name: Authors
-      authors_profiles_url_format: "{slug}"
+      authors_file: "{blog}/.authors.yml"
       draft_if_future_date: true
-      archive: false
   - rss:
-      match_path: blog/posts/.* 
+      match_path: blog/posts/.*
       date_from_meta:
         as_creation: date
       categories:
@@ -68,5 +68,14 @@ extra:
     title: Politica Cookie
     description: >- 
       Utilizamos cookies para reconhecer suas repetidas visitas e preferências, bem como para medir a eficácia de nossa documentação e se os usuários encontram o que procuram. Com o seu consentimento, você está nos ajudando a melhorar nossa documentação.
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 copyright: Copyright &copy; 2024 André F. S. Protasio
