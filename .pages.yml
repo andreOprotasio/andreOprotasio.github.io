@@ -1,2 +1,5 @@
-contend
-  - path: docs/blog/posts
+content:
+  - name: posts
+    label: Posts
+    path: docs/blog/posts
+    type: collection
